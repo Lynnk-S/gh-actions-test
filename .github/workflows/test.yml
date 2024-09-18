@@ -8,3 +8,19 @@ jobs:
     steps:
       - name: Hola mundo
         run: echo "Hello World"
+
+      - name: touch file
+        run: touch file.txt
+
+      - name: set content
+        run: echo "Hello World" > file.txt
+
+      - name: cat file
+        run: cat file.txt 
+
+  other :
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: LS
+        run: ls -al
