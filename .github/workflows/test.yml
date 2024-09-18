@@ -16,11 +16,11 @@ jobs:
         run: echo "Hello World" > file.txt
 
       - name: cat file
-        run: cat file.txt 
+        run: cat file.txt
 
-  other :
+  other:
     runs-on: ubuntu-latest
-
+    needs: hola
     steps:
       - name: LS
         run: ls -al
